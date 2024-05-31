@@ -98,5 +98,7 @@ In the Fishers test the odds ratio is 2.3 so men are 2.3% more likely to die fro
 ## Conclusions
 
 
-
+In conclusion death rates are not independent of sex.      
+We must reject $H_0$ because the p-value from the Chi-Squared test is smaller than   0.05. This shows that the death rate and sex variables are dependent of one   another.The Fisher test showed that there was 2.3 TO 1 ratio of death rates between   men and woman proving that men had a higher rate of death. This also shows that the   there was difference between the two.     
+ 
 
