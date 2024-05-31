@@ -21,6 +21,10 @@ mutate(across(where(is.character), as.factor))
 
 # Introduction
 
+$H_0$ There is no difference between death rates depending on sex  
+
+$H_A$ There is a difference between death rates depending on sex
+
 
 
 
@@ -41,13 +45,7 @@ Result is a categorical variable, sex is categorical
 
 result depends on sex, we use helper file cat~cat
 
-# Results
-
-
-
-
-
-
+# Results  
 
 
 ## Graphical results - use ggplot commands to do this  
@@ -65,14 +63,28 @@ This bar chart shows that a higher percentage of men than women died from covid,
 
 
 
-
-
   
 ## Numerical results
+
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+The numerical summary shows that 98.7% of women lived whereas 97% of men lived and 1.4% of women died while 3% of men died.
+
+
+
 
 
 ## Inferential results 
 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 
