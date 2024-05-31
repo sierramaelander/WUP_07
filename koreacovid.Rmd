@@ -41,11 +41,26 @@ Result is a categorical variable, sex is categorical
 
 result depends on sex, we use helper file cat~cat
 
+# Results
+
+
+
+
+
+
+
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
+
+```
 
 
+
+This bar chart shows that a higher percentage of men than women died from covid, and that a higher percentage of woman lived than men.
   
 
 
