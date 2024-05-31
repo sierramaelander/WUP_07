@@ -18,6 +18,13 @@ kRdata <- kRdata %>%
 mutate(across(where(is.character), as.factor))
 
 ```
+
+# Introduction
+
+
+
+
+
 ### Data is from the Patient_Info dataset from South Korea 1 Jan to 1 May 2020
 ### This data was retrieved from a downloadable zip file from kaggle
 
@@ -28,8 +35,11 @@ state of a patient must be died or alive - we adjust that as well
 # Your Question - Is dying independent of sex?
 
 
+# Methods
 
+Result is a categorical variable, sex is categorical
 
+result depends on sex, we use helper file cat~cat
 
 
 ## Graphical results - use ggplot commands to do this  
