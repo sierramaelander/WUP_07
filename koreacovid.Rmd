@@ -87,6 +87,16 @@ fisher.test(table1)
 ```
 
 
+The p-value for the chi-squared test is 0.001, so we must reject $H_0$
+
+The p-value for the Fisher test is 0.0009, so we must reject the null hypothesis  
+In the Fishers test the odds ratio is 2.3 so men are 2.3% more likely to die from   covid in Korea than Woman.
+
+
+
 
 ## Conclusions
+
+
+
 
